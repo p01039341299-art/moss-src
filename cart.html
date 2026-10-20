@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cart | Moss &amp; Mill</title>
+<meta name="description" content="Review the recipe cards in your Moss &amp; Mill cart, apply a coupon, and check out as a guest.">
+<meta name="theme-color" content="#3D5C4A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Cart | Moss &amp; Mill">
+<meta property="og:description" content="Review the recipe cards in your Moss &amp; Mill cart, apply a coupon, and check out as a guest.">
+<meta property="og:site_name" content="Moss &amp; Mill">
+<meta property="og:image" content="assets/img/chicago-italian-beef.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo-mark-256.png">
+<script>document.documentElement.className='js';(function(){try{var c=new URLSearchParams(location.search).get('cat');if(c)document.documentElement.setAttribute('data-cat',c.toLowerCase());}catch(e){}})();</script>
+</head><body class="page-cart">
+<a class="skip" href="#main">Skip to content</a>
+<div class="announce"><div class="wrap announce-in"><span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> 10 recipes are free — no account needed</span><span class="hide-sm"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.5 12.2V4.5a1 1 0 0 1 1-1h7.7l8.3 8.3a1.5 1.5 0 0 1 0 2.1l-6.2 6.2a1.5 1.5 0 0 1-2.1 0z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/></svg> New here? Use <b>WELCOME10</b> for 10% off</span><a href="orders.html"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 7.5L12 3l8 4.5v9L12 21l-8-4.5z M4 7.5L12 12l8-4.5 M12 12v9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg> Track an order</a></div></div>
+<header class="top" id="top">
+  <div class="wrap bar">
+    <a class="logo " href="index.php" aria-label="Moss &amp; Mill home"><img src="assets/logo-mark-256.png" alt="" width="42" height="42"><span>Moss<em> &amp; Mill</em></span></a>
+    <nav id="nav" aria-label="Main">
+      <a href="index.php">Home</a>
+      <a href="recipes.html">Shop</a>
+      <a href="recipes.html?tier=free">Free recipes</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="bar-actions">
+      <a class="icon-btn" href="recipes.html#q" aria-label="Search recipes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+      <a class="icon-btn saved-link" href="saved.html" aria-label="Saved recipes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.6 3.2 5 6.8 5c2 0 3.4 1.1 4.2 2.4h2C13.8 6.1 15.2 5 17.2 5c3.6 0 5.6 3.6 4.3 6.8C19.5 16.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><b class="saved-count" data-saved-count hidden>0</b></a>
+      <a class="icon-btn cart-link on" href="cart.html" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><b class="saved-count cart-count" data-cart-count hidden>0</b></a>
+      <a class="btn small top-cta" href="recipes.html">Shop recipes</a>
+      <button class="burger" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main"><section class="wrap page-head shop-head">
+  <ol class="steps-bar" aria-label="Checkout progress"><li class="on"><span>1</span>Cart</li><li class=""><span>2</span>Details & payment</li><li class=""><span>3</span>Order placed</li></ol>
+  <h1>Your cart</h1>
+  <p>Review your premium recipe cards, apply a coupon, and continue to guest checkout. Nothing is shipped — cards are emailed once payment is confirmed.</p>
+</section>
+<section class="wrap shop-layout" data-cart-page>
+  <div class="shop-main">
+    <div class="cart-table" data-cart-rows></div>
+    <div class="empty-state big" data-cart-page-empty>
+      <img src="assets/logo-mark-256.png" alt="" width="72" height="72">
+      <h2>Your cart is empty</h2>
+      <p>Browse the shop and add premium recipe cards — or start with one of our 10 free recipes.</p>
+      <div class="btns center"><a class="btn" href="recipes.html?tier=paid">Shop recipe cards</a><a class="btn outline dark" href="recipes.html?tier=free">Free recipes</a></div>
+    </div>
+    <div class="cart-actions" data-cart-actions><a class="more-link" href="recipes.html">← Continue shopping</a><button class="link" type="button" data-cart-clear>Empty cart</button></div>
+  </div>
+  <aside class="summary" data-summary>
+    <h2>Order summary</h2>
+    <form class="coupon" data-coupon-form novalidate>
+    <label class="sr" for="couponIn">Coupon code</label>
+    <span class="coupon-ico"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.5 12.2V4.5a1 1 0 0 1 1-1h7.7l8.3 8.3a1.5 1.5 0 0 1 0 2.1l-6.2 6.2a1.5 1.5 0 0 1-2.1 0z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/></svg></span><input id="couponIn" name="code" placeholder="Coupon code" autocomplete="off" maxlength="20">
+    <button class="btn small outline dark" type="submit">Apply</button>
+  </form>
+  <p class="coupon-msg" data-coupon-msg aria-live="polite"></p>
+  <div class="coupon-on" data-coupon-on hidden></div>
+    <div class="sum-lines">
+    <div class="sum-line"><span>Subtotal <small data-sum-count></small></span><b data-sum-subtotal>$0.00</b></div>
+    <div class="sum-line discount" data-sum-discount-row hidden><span>Discount <small data-sum-code></small></span><b data-sum-discount>−$0.00</b></div>
+    <div class="sum-line"><span>Delivery</span><b class="ok-text">Free · by email</b></div>
+    <div class="sum-line total"><span>Total <small>USD</small></span><b data-sum-total>$0.00</b></div>
+  </div>
+    <a class="btn full big" href="checkout.html" data-go-checkout><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Proceed to checkout</a>
+    <p class="sum-note">Try <button class="link" type="button" data-copy="WELCOME10">WELCOME10</button> for 10% off.</p>
+    <ul class="trust-list">
+    <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c.8-4.3 4-6.5 8-6.5s7.2 2.2 8 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span><b>Guest checkout</b> — no account or password</span></li>
+    <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span><b>Email delivery</b> — printable cards after payment</span></li>
+    <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.2 2.2 4.2-4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>14-day refund</b> — <a href="refund-policy.html">read the policy</a></span></li>
+  </ul>
+  </aside>
+</section>
+<section class="wrap block">
+  <div class="head reveal"><div><p class="kicker">Popular add-ons</p><h2>Customers also bought</h2></div><a class="more-link" href="recipes.html?tier=paid">Shop all cards <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  <div class="rail" data-recs><div class="mini rec reveal" data-rec="chicago-cinnamon-coffee-cake"><a href="recipe-chicago-cinnamon-coffee-cake.html"><img src="assets/img/chicago-cinnamon-coffee-cake.jpg" alt="Chicago Cinnamon Coffee Cake" loading="lazy" width="400" height="400"><span class="mini-time">$3.99</span><b>Chicago Cinnamon Coffee Cake</b></a><button class="btn small add-cart" type="button" data-add="chicago-cinnamon-coffee-cake"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div><div class="mini rec reveal" data-rec="savory-cheddar-biscuits"><a href="recipe-savory-cheddar-biscuits.html"><img src="assets/img/savory-cheddar-biscuits.jpg" alt="Savory Cheddar Chive Biscuits" loading="lazy" width="400" height="400"><span class="mini-time">$2.99</span><b>Savory Cheddar Chive Biscuits</b></a><button class="btn small add-cart" type="button" data-add="savory-cheddar-biscuits"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div><div class="mini rec reveal" data-rec="maple-pecan-french-toast-bake"><a href="recipe-maple-pecan-french-toast-bake.html"><img src="assets/img/maple-pecan-french-toast-bake.jpg" alt="Maple Pecan French Toast Bake" loading="lazy" width="400" height="400"><span class="mini-time">$4.99</span><b>Maple Pecan French Toast Bake</b></a><button class="btn small add-cart" type="button" data-add="maple-pecan-french-toast-bake"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div><div class="mini rec reveal" data-rec="chicago-italian-beef"><a href="recipe-chicago-italian-beef.html"><img src="assets/img/chicago-italian-beef.jpg" alt="Chicago Italian Beef Sandwich" loading="lazy" width="400" height="400"><span class="mini-time">$4.99</span><b>Chicago Italian Beef Sandwich</b></a><button class="btn small add-cart" type="button" data-add="chicago-italian-beef"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div><div class="mini rec reveal" data-rec="chicago-deep-dish-pizza"><a href="recipe-chicago-deep-dish-pizza.html"><img src="assets/img/chicago-deep-dish-pizza.jpg" alt="Chicago Deep-Dish Pizza" loading="lazy" width="400" height="400"><span class="mini-time">$5.99</span><b>Chicago Deep-Dish Pizza</b></a><button class="btn small add-cart" type="button" data-add="chicago-deep-dish-pizza"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div><div class="mini rec reveal" data-rec="giardiniera-chicken-skillet"><a href="recipe-giardiniera-chicken-skillet.html"><img src="assets/img/giardiniera-chicken-skillet.jpg" alt="Giardiniera Chicken Skillet" loading="lazy" width="400" height="400"><span class="mini-time">$3.99</span><b>Giardiniera Chicken Skillet</b></a><button class="btn small add-cart" type="button" data-add="giardiniera-chicken-skillet"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div><div class="mini rec reveal" data-rec="chicago-tavern-burger"><a href="recipe-chicago-tavern-burger.html"><img src="assets/img/chicago-tavern-burger.jpg" alt="Chicago Tavern Smash Burger" loading="lazy" width="400" height="400"><span class="mini-time">$3.99</span><b>Chicago Tavern Smash Burger</b></a><button class="btn small add-cart" type="button" data-add="chicago-tavern-burger"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div><div class="mini rec reveal" data-rec="jibarito-plantain-sandwich"><a href="recipe-jibarito-plantain-sandwich.html"><img src="assets/img/jibarito-plantain-sandwich.jpg" alt="Jibarito Plantain Sandwich" loading="lazy" width="400" height="400"><span class="mini-time">$4.99</span><b>Jibarito Plantain Sandwich</b></a><button class="btn small add-cart" type="button" data-add="jibarito-plantain-sandwich"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span data-add-label>Add to cart</span></button></div></div>
+</section></main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo big" href="index.php" aria-label="Moss &amp; Mill home"><img src="assets/logo-mark-256.png" alt="" width="42" height="42"><span>Moss<em> &amp; Mill</em></span></a>
+      <p>Moss &amp; Mill is a Chicago recipe shop from Elena Vargas. Cook our free recipes today, or buy kitchen-tested premium recipe cards — Italian beef, deep-dish pizza, shrimp De Jonghe, giardiniera chicken, and Chicago-style cheesecake — with full steps, tips, and printable cards.</p>
+      <p class="foot-contact"><a href="mailto:hello@mossandmill.com">hello@mossandmill.com</a><br><a href="tel:+13125550184">+1 (312) 555-0184</a><br>233 S Wacker Drive, Suite 5800, Chicago, IL 60606</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="recipes.html">All recipes</a>
+      <a href="recipes.html?tier=free">Free recipes</a>
+      <a href="recipes.html?tier=paid">Premium recipe cards</a>
+      <a href="recipes.html?cat=breakfast">Breakfast</a><a href="recipes.html?cat=seafood">Seafood</a><a href="recipes.html?cat=mains">Mains</a><a href="recipes.html?cat=sides">Sides</a><a href="recipes.html?cat=desserts">Desserts</a>
+    </div>
+    <div>
+      <h4>Your orders</h4>
+      <a href="cart.html">Cart</a><a href="checkout.html">Checkout</a><a href="orders.html">Track an order</a><a href="saved.html">Saved recipes</a><a href="refund-policy.html">Refunds &amp; returns</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="about.html">About us</a><a href="contact.html">Contact &amp; enquiries</a><a href="delete-my-data.html">Delete my data</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Sale</a><a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+  <div class="wrap pay-row"><span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.2 2.2 4.2-4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Guest checkout — no account or password</span><span class="pay-badges"><b>VISA</b><b>Mastercard</b><b>AMEX</b><b>PayPal</b><b>Bank transfer</b></span></div>
+  <div class="wrap foot-note"><span>© 2026 Moss &amp; Mill · mossandmill.com</span><span>Recipes tested and photographed in the Moss &amp; Mill studio kitchen, Chicago, IL. Prices in US dollars.</span></div>
+</footer>
+<button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="drawer-shade" id="drawerShade" hidden></div>
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true" tabindex="-1">
+  <div class="drawer-head"><h2>Your cart <small data-cart-count-text>(0)</small></h2><button class="x" type="button" data-cart-close aria-label="Close cart">×</button></div>
+  <div class="drawer-body" data-cart-list></div>
+  <div class="drawer-empty" data-cart-empty><img src="assets/logo-mark-256.png" alt="" width="64" height="64"><h3>Your cart is empty</h3><p>Premium recipe cards you add will show up here.</p><a class="btn" href="recipes.html?tier=paid">Shop recipe cards</a></div>
+  <div class="drawer-foot" data-cart-foot>
+    <div class="sum-line"><span>Subtotal</span><b data-cart-subtotal>$0.00</b></div>
+    <p class="drawer-note">Coupons and the final total are shown at checkout. Digital recipe cards — nothing is shipped.</p>
+    <a class="btn full big" href="checkout.html"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Checkout as guest</a>
+    <a class="btn full outline dark" href="cart.html">View cart</a>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

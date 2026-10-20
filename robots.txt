@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /checkout.html
+Disallow: /order-confirmation.html
+Sitemap: https://mossandmill.com/sitemap.xml
